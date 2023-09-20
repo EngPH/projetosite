@@ -2,391 +2,476 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/estilo.css">
-    <link rel="stylesheet" href="assets/normalize.css">
-    <link rel="stylesheet" href="assets/owl.css">
-    <title>TecStore</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/estilo.css">
+  <link rel="stylesheet" href="assets/normalize.css">
+  <link rel="stylesheet" href="assets/owl.css">
+  <title>TecStore</title>
 </head>
 
 <body>
-    <header>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
-            <div class="container">
-                <a class="navbar-brand" href="#!"><span style="color: var(--corpadrao)">Tec</span><span
-                        style="color: #535353;">Store</span></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Categorias
-                            </a>
-                            <div class="dropdown-menu mask-custom shadow-1" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item fonte" href="#">Computadores</a>
-                                <a class="dropdown-item fonte" href="#">Hardware</a>
-                                <a class="dropdown-item fonte" href="#">Periféricos</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#!">Promoções</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#!">Parceiros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#!">Sobre nós</a>
-                        </li>
-                        <li class="nav-item contato">
-                            <a class="nav-link" href="#!">Contato</a>
-                        </li>
-                        <li class="nav-item Carrinho">
-                            <a class="nav-link" data-toggle="modal" data-target="#ModalCenter" href="#!"> <svg
-                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-cart" viewBox="0 1 16 17">
-                                    <path
-                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                                </svg> Carrinho</a>
-                        </li>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
+      <div class="container">
+        <a class="navbar-brand" href="#!"><span style="color: var(--corpadrao)">Tec</span><span
+            style="color: #535353;">Store</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Categorias
+              </a>
+              <div class="dropdown-menu mask-custom shadow-1" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item fonte" href="#">Computadores</a>
+                <a class="dropdown-item fonte" href="#">Hardware</a>
+                <a class="dropdown-item fonte" href="#">Periféricos</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Promoções</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Parceiros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Sobre nós</a>
+            </li>
+            <li class="nav-item contato">
+              <a class="nav-link" href="#!">Contato</a>
+            </li>
+            <li class="nav-item Carrinho">
+              <a class="nav-link" data-toggle="modal" data-target="#ModalCenter" href="#!"> <svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                  viewBox="0 1 16 17">
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg> Carrinho</a>
+            </li>
 
 
-                </div>
+        </div>
 
-                <div class="input-group">
-                    <input type="search" class="form-control rounded" placeholder="O que você está procurando?"
-                        aria-label="Search" aria-describedby="search-addon" />
-                    <button type="button" class="btn btn-outline-secondary">Buscar</button>
-                </div>
+        <div class="input-group">
+          <input type="search" class="form-control rounded" placeholder="O que você está procurando?"
+            aria-label="Search" aria-describedby="search-addon" />
+          <button type="button" class="btn btn-outline-secondary">Buscar</button>
+        </div>
 
-            </div>
+      </div>
 
-        </nav>
-        <!-- Navbar -->
+    </nav>
+    <!-- Navbar -->
 
-        <!--Section: Design Block-->
-        <section>
-            <!-- Intro -->
-            <div id="intro" class="bg-image" style="
+    <!--Section: Design Block-->
+    <section>
+      <!-- Intro -->
+      <div id="intro" class="bg-image" style="
                 background-image: url(assets/img/setup2.png);
                 height: 35vh;
               ">
-                <div class="mask" style="background-color: rgba(250, 182, 162, 0.15);"></div>
-            </div>
-            <div id="intro2" class="bg-image" style="
+        <div class="mask" style="background-color: rgba(250, 182, 162, 0.15);"></div>
+      </div>
+      <div id="intro2" class="bg-image" style="
                 background-image: url(assets/img/setup3.png);
                 height: 45vh;
               ">
-                <div class="mask" style="background-color: rgba(250, 182, 162, 0.15);"></div>
-            </div>
-            <div id="intro3" class="bg-image" style="
+        <div class="mask" style="background-color: rgba(250, 182, 162, 0.15);"></div>
+      </div>
+      <div id="intro3" class="bg-image" style="
             background-image: url(assets/img/setup4.png);
             height: 50vh;
           ">
-            <div class="mask" style="background-color: rgba(250, 182, 162, 0.15);"></div>
-        </div>
-            <!-- Modal Carrinho-->
-            <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+        <div class="mask" style="background-color: rgba(250, 182, 162, 0.15);"></div>
+      </div>
+      <!-- Modal Carrinho-->
+      <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <!-- Conteudo-->
+            <div class="modal-body">
+              <div class="card">
+                <div class="row">
+                    <div class="col-md-8 cart">
+                        <div class="title">
+                            <div class="row">
+                                <div class="col"><h4><b>Shopping Cart</b></h4></div>
+                                <div class="col align-self-center text-right text-muted">3 items</div>
+                            </div>
+                        </div>    
+                        <div class="row border-top border-bottom">
+                            <div class="row main align-items-center">
+                                <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/1GrakTl.jpg"></div>
+                                <div class="col">
+                                    <div class="row text-muted">Shirt</div>
+                                    <div class="row">Cotton T-shirt</div>
+                                </div>
+                                <div class="col">
+                                    <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
+                                </div>
+                                <div class="col">&euro; 44.00 <span class="close">&#10005;</span></div>
+                            </div>
                         </div>
-                        <div class="modal-body">
-                            ...
+                        <div class="row">
+                            <div class="row main align-items-center">
+                                <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/ba3tvGm.jpg"></div>
+                                <div class="col">
+                                    <div class="row text-muted">Shirt</div>
+                                    <div class="row">Cotton T-shirt</div>
+                                </div>
+                                <div class="col">
+                                    <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
+                                </div>
+                                <div class="col">&euro; 44.00 <span class="close">&#10005;</span></div>
+                            </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                        <div class="row border-top border-bottom">
+                            <div class="row main align-items-center">
+                                <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/pHQ3xT3.jpg"></div>
+                                <div class="col">
+                                    <div class="row text-muted">Shirt</div>
+                                    <div class="row">Cotton T-shirt</div>
+                                </div>
+                                <div class="col">
+                                    <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
+                                </div>
+                                <div class="col">&euro; 44.00 <span class="close">&#10005;</span></div>
+                            </div>
                         </div>
+                        <div class="back-to-shop"><a href="#">&leftarrow;</a><span class="text-muted">Back to shop</span></div>
+                    </div>
+                    <div class="col-md-4 summary">
+                        <div><h5><b>Summary</b></h5></div>
+                        <hr>
+                        <div class="row">
+                            <div class="col" style="padding-left:0;">ITEMS 3</div>
+                            <div class="col text-right">&euro; 132.00</div>
+                        </div>
+                        <form>
+                            <p>SHIPPING</p>
+                            <select><option class="text-muted">Standard-Delivery- &euro;5.00</option></select>
+                            <p>GIVE CODE</p>
+                            <input id="code" placeholder="Enter your code">
+                        </form>
+                        <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                            <div class="col">TOTAL PRICE</div>
+                            <div class="col text-right">&euro; 137.00</div>
+                        </div>
+                        <button class="btn">CHECKOUT</button>
                     </div>
                 </div>
+                
             </div>
-            <!-- Fim da Modal -->
-            <!-- Intro -->
-        </section>
-        <!--Section: Design Block-->
-    </header>
-    <section>
+            </div>
+            <div class="modal-footer">
+              <button type="button"  data-dismiss="modal">Comprar mais</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fim da Modal -->
+      <!-- Intro -->
+    </section>
+    <!--Section: Design Block-->
+  </header>
+  <section>
     <div class="latest-products">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="section-heading">
-                <h2>Novidades</h2>
-                <a class="roxo" href="products.html">Todos os produtos <i class="fa fa-angle-right"></i></a>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Novidades</h2>
+              <a class="roxo" href="products.html">Todos os produtos <i class="fa fa-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/produto1.png" alt=""></a>
+              <div class="down-content">
+                <a href="#">
+                  <h4>Placa de Vídeo 3060</h4>
+                </a>
+                <h6>R$2.000,00</h6>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                <br>
+                <span>Reviews (24)</span>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="product-item">
-                <a href="#"><img src="assets/images/product_01.jpg" alt=""></a>
-                <div class="down-content">
-                  <a href="#"><h4>Placa de Vídeo 3060</h4></a>
-                  <h6>R$2.000,00</h6>
-                  <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
-                  <br>
-                  <span>Reviews (24)</span>
-                </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/produto2.png" alt=""></a>
+              <div class="down-content">
+                <a href="#">
+                  <h4>Processador I7</h4>
+                </a>
+                <h6>R$3.000,00</h6>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                <br>
+                <span>Reviews (21)</span>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="product-item">
-                <a href="#"><img src="assets/images/product_02.jpg" alt=""></a>
-                <div class="down-content">
-                  <a href="#"><h4>Processador I7</h4></a>
-                  <h6>R$3.000,00</h6>
-                  <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
-                  <br>
-                  <span>Reviews (21)</span>
-                </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/produto3.png" alt=""></a>
+              <div class="down-content">
+                <a href="#">
+                  <h4>Memória Ram 16GB</h4>
+                </a>
+                <h6>R$500,00</h6>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                <br>
+                <span>Reviews (36)</span>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="product-item">
-                <a href="#"><img src="assets/images/product_03.jpg" alt=""></a>
-                <div class="down-content">
-                  <a href="#"><h4>Memória Ram 16GB</h4></a>
-                  <h6>R$500,00</h6>
-                  <p>Sixteen Clothing is free CSS template provided by TemplateMo.</p>
-                  <br>
-                  <span>Reviews (36)</span>
-                </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/produto4.png" alt=""></a>
+              <div class="down-content">
+                <a href="#">
+                  <h4>Placa Mãe Z790</h4>
+                </a>
+                <h6>R$2.500,00</h6>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                <br>
+                <span>Reviews (48)</span>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="product-item">
-                <a href="#"><img src="assets/images/product_04.jpg" alt=""></a>
-                <div class="down-content">
-                  <a href="#"><h4>Placa Mãe Z790</h4></a>
-                  <h6>R$2.500,00</h6>
-                  <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
-                  <br>
-                  <span>Reviews (48)</span>
-                </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/produto5.png" alt=""></a>
+              <div class="down-content">
+                <a href="#">
+                  <h4>Cooler Gelado</h4>
+                </a>
+                <h6>R$800,00</h6>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                <br>
+                <span>Reviews (16)</span>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="product-item">
-                <a href="#"><img src="assets/images/product_05.jpg" alt=""></a>
-                <div class="down-content">
-                  <a href="#"><h4>Cooler Gelado</h4></a>
-                  <h6>R$800,00</h6>
-                  <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
-                  <br>
-                  <span>Reviews (16)</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="product-item">
-                <a href="#"><img src="assets/images/product_06.jpg" alt=""></a>
-                <div class="down-content">
-                  <a href="#"><h4>Fonte 1000W</h4></a>
-                  <h6>R$800,00</h6>
-                  <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
-                  <br>
-                  <span>Reviews (32)</span>
-                </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/produto6.png" alt=""></a>
+              <div class="down-content">
+                <a href="#">
+                  <h4>Fonte 1000W</h4>
+                </a>
+                <h6>R$800,00</h6>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                <br>
+                <span>Reviews (32)</span>
               </div>
             </div>
           </div>
         </div>
+      </div>
     </div>
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="assets/images/carrossel1.png" alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="assets/images/carrosel2.png" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="assets/images/carrossel3.png" alt="Third slide">
-          </div>
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="assets/images/carrossel1.png" alt="First slide">
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only"></span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only"></span>
-        </a>
-      </div>
-
-      <!-- feature section -->
-
-  <section class="feature_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Faça seu pedido!!!
-        </h2>
-        <p>
-          Comprando na TecStore você garante várias vantagens
-        </p>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-lg-3">
-          <div class="box">
-            <div class="detail-box">
-              <h5>
-                Frete Grátis
-              </h5>
-              <p>
-                A partir de R$300,00 em compras
-              </p>
-              <a href="">
-                <span>
-                  Veja mais
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/images/carrosel2.png" alt="Second slide">
         </div>
-        <div class="col-sm-6 col-lg-3">
-          <div class="box">
-            <div class="detail-box">
-              <h5>
-                Entrega Rápida
-              </h5>
-              <p>
-                Diversas transportadoras disponíveis
-              </p>
-              <a href="">
-                <span>
-                  Veja mais
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-          <div class="box">
-            <div class="detail-box">
-              <h5>
-                Parcelamento
-              </h5>
-              <p>
-                Compre em até 12x sem juros
-              </p>
-              <a href="">
-                <span>
-                  Veja mais
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-          <div class="box">
-            <div class="detail-box">
-              <h5>
-                Garantia Extendida
-              </h5>
-              <p>
-                Ganhe grátis 1 ano de garantia extendida
-              </p>
-              <a href="">
-                <span>
-                  Veja mais
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/images/carrossel3.png" alt="Third slide">
         </div>
       </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
     </div>
-  </section>
 
-  <!-- end feature section -->
+    <!-- feature section -->
 
-  <!-- contact section -->
-
-  <section class="contact_section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form_container">
-            <div class="heading_container">
-              <h2>
-                Entre em contato
-              </h2>
-            </div>
-            <form action="">
-              <div>
-                <input type="text" placeholder="Nome " />
-              </div>
-              <div>
-                <input type="email" placeholder="Email" />
-              </div>
-              <div>
-                <input type="text"  placeholder="Telefone" />
-              </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Mensagem" />
-              </div>
-              <div class="d-flex ">
-                <button>
-                  Enviar
-                </button>
-              </div>
-            </form>
-          </div>
+    <section class="feature_section layout_padding">
+      <div class="container">
+        <div class="heading_container">
+          <h2>
+            Faça seu pedido!!!
+          </h2>
+          <p>
+            Comprando na TecStore você garante várias vantagens
+          </p>
         </div>
-        <div class="col-md-6">
-          <div class="img-box">
-            <img src="assets/images/contact-img.jpg" alt="">
+        <div class="row">
+          <div class="col-sm-6 col-lg-3">
+            <div class="box">
+              <div class="detail-box">
+                <h5>
+                  Frete Grátis
+                </h5>
+                <p>
+                  A partir de R$300,00 em compras
+                </p>
+                <a href="">
+                  <span>
+                    Veja mais
+                  </span>
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="box">
+              <div class="detail-box">
+                <h5>
+                  Entrega Rápida
+                </h5>
+                <p>
+                  Diversas transportadoras disponíveis
+                </p>
+                <a href="">
+                  <span>
+                    Veja mais
+                  </span>
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="box">
+              <div class="detail-box">
+                <h5>
+                  Parcelamento
+                </h5>
+                <p>
+                  Compre em até 12x sem juros
+                </p>
+                <a href="">
+                  <span>
+                    Veja mais
+                  </span>
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="box">
+              <div class="detail-box">
+                <h5>
+                  Garantia Extendida
+                </h5>
+                <p>
+                  Ganhe grátis 1 ano de garantia extendida
+                </p>
+                <a href="">
+                  <span>
+                    Veja mais
+                  </span>
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- end contact section -->
-      
     </section>
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/owl.js"></script>
-    <script src="assets/js/slick.js"></script>
-    <script src="assets/js/isotope.js"></script>
-    <script src="assets/js/accordions.js"></script>
-        
-        
+
+    <!-- end feature section -->
+
+    <!-- contact section -->
+
+    <section class="contact_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form_container">
+              <div class="heading_container">
+                <h2>
+                  Entre em contato
+                </h2>
+              </div>
+              <form action="">
+                <div>
+                  <input type="text" placeholder="Nome " />
+                </div>
+                <div>
+                  <input type="email" placeholder="Email" />
+                </div>
+                <div>
+                  <input type="text" placeholder="Telefone" />
+                </div>
+                <div>
+                  <input type="text" class="message-box" placeholder="Mensagem" />
+                </div>
+                <div class="d-flex ">
+                  <button>
+                    Enviar
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="boxmap">
+              <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.0283628031116!2d-51.473846172973936!3d-25.4038611775785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ef462cdc2f72fb%3A0xbe73a2c1e8973c98!2sCentro%20Universit%C3%A1rio%20Campo%20Real!5e0!3m2!1spt-BR!2sbr!4v1695167273156!5m2!1spt-BR!2sbr"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end contact section -->
+
+  </section>
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/owl.js"></script>
+  <script src="assets/js/slick.js"></script>
+  <script src="assets/js/isotope.js"></script>
+  <script src="assets/js/accordions.js"></script>
+
+
 
 </body>
 
